@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pinky Music - Bot de Discord</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pinky Music es un bot de música para Discord.">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+    header {
+      padding: 2rem 1.5rem;
+      text-align: center;
+      background: radial-gradient(circle at top, #4f46e5, #0f172a);
+    }
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin: 0.3rem 0;
+      color: #cbd5f5;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1.5rem 3rem;
+    }
+    section {
+      margin-bottom: 2rem;
+      background: #020617;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      border: 1px solid #1f2937;
+    }
+    h2 {
+      margin-top: 0;
+      color: #e5e7eb;
+    }
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .btn-row {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .btn {
+      padding: 0.8rem 1.4rem;
+      border-radius: 999px;
+      border: 1px solid #4f46e5;
+      background: #4f46e5;
+      color: white;
+      font-weight: 500;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn.secondary {
+      background: transparent;
+      border-color: #374151;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      border-top: 1px solid #1f2937;
+      font-size: 0.9rem;
+      color: #9ca3af;
+      background: #020617;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pinky Music</h1>
+    <p>Bot de música para Discord, simple, ligero y sin guardar datos.</p>
+    <p>Contacto: <a href="mailto:pachefortnite@gmail.com">pachefortnite@gmail.com</a></p>
+  </header>
+
+  <main>
+    <section>
+      <h2>¿Qué es Pinky Music?</h2>
+      <p>
+        Pinky Music es un bot de música para servidores de Discord. Permite reproducir audio en canales
+        de voz de forma sencilla. El bot no almacena datos personales ni IDs de usuarios: solo procesa
+        la información necesaria en tiempo real para ejecutar los comandos.
+      </p>
+      <div class="btn-row">
+        <a class="btn" href="terms-of-service.html">Ver Términos de Servicio</a>
+        <a class="btn secondary" href="privacy-policy.html">Ver Política de Privacidad</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Legal</h2>
+      <p>
+        Al utilizar Pinky Music en tu servidor de Discord aceptas los
+        <a href="terms-of-service.html">Términos de Servicio</a> y la
+        <a href="privacy-policy.html">Política de Privacidad</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Pinky Music. Todos los derechos reservados.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
